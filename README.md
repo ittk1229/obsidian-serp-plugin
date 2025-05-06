@@ -69,26 +69,28 @@ cp ./style.css ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 
 ## 設定
 
-プラグインの設定画面から以下の内容を設定できます：
+プラグインの設定画面から以下の内容を設定できます。
 
 - `API Base URL`: 検索 API の URL を設定
 
 ## API 統合
 
-Obsidian SERP は、次の形式に従う外部検索 API に接続できます：
+Obsidian SERP は、次の形式に従う外部検索 API に接続できます。
+
+この形式に対応した検索 API の実装を含むリポジトリを近日公開します。
 
 - **検索エンドポイント**: `GET /search?q={query}`
   - クエリに対する検索結果を取得
 
 ```jsonc
 {
-	"results": [
-		{
-			"title": "Obsidianの基本的な使い方",
-			"linkpath": "9-inbox/Obsidianの基本的な使い方.md",  // Vaultからの相対パス
-			"snippet": "Obsidianは、マークダウン形式でノートを作成し、リンクを使ってノート同士を繋げることができるツールです。このガイドでは、Obsidianのインストールから基本的な使い方まで説明します。 インスト..."
-		},
-	]
+  "results": [
+    {
+      "title": "Obsidianの基本的な使い方",
+      "linkpath": "9-inbox/Obsidianの基本的な使い方.md",  // Vaultからの相対パス
+      "snippet": "Obsidianは、マークダウン形式でノートを作成し、リンクを使ってノート同士を繋げることができるツールです。このガイドでは、Obsidianのインストールから基本的な使い方まで説明します。 インスト..."
+    },
+  ]
 }
 ```
 
