@@ -1,0 +1,9 @@
+{
+	"id": "serp",
+	"name": "SERP",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Provides a search results interface by integrating with external search APIs for better note retrieval.",
+	"author": "ittk1229",
+	"isDesktopOnly": false
+}

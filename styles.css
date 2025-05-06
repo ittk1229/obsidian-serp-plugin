@@ -1,0 +1,118 @@
+/* 検索行のスタイル */
+.serp-search-row {
+	display: flex;
+	gap: 8px;
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+/* 検索入力フィールドのスタイル */
+.serp-query-input {
+	flex-grow: 1;
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 24px;
+	outline: none;
+	box-shadow: none;
+}
+
+/* 検索ボタンのスタイル */
+.serp-search-button {
+	padding: 8px 16px;
+	font-size: 14px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* 検索結果エリアのスタイル */
+.serp-results {
+	max-width: 700px;
+	margin: 2em auto;
+	font-family: Arial, sans-serif;
+}
+
+/* 検索結果アイテムのスタイル */
+.search-result-item {
+	margin-bottom: 2em;
+}
+
+/* 検索結果タイトルのスタイル */
+.serp-result-title {
+	font-size: 18px;
+	color: var(--link-color);
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 0.2em;
+}
+
+.serp-result-title:hover {
+	text-decoration: underline;
+}
+
+/* 検索結果スニペットのスタイル */
+.serp-result-snippet {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/* コンテナスタイル */
+.serp-container {
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+/* インデックスステータスバーのスタイル */
+.serp-index-status-bar {
+	font-size: 0.8em;
+	color: var(--text-muted);
+	margin-bottom: 12px;
+	padding: 4px 0;
+}
+
+.serp-reindexing-indicator {
+	color: var(--text-accent);
+	font-style: italic;
+}
+
+/* 設定コンテナのスタイル */
+.serp-settings-container {
+	position: relative;
+}
+
+/* 設定メニューのスタイル */
+.serp-settings-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	margin-top: 5px;
+	background-color: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	z-index: 100;
+	min-width: 120px;
+}
+
+/* メニュー項目のスタイル */
+.serp-menu-item {
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.serp-menu-item:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+.serp-menu-item[aria-disabled="true"] {
+	color: var(--text-muted);
+	cursor: not-allowed;
+}
+
+/* ローディング表示のスタイル */
+.serp-loading,
+.serp-no-results {
+	padding: 20px 0;
+	text-align: center;
+	color: var(--text-muted);
+}
