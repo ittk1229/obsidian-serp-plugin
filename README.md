@@ -3,7 +3,7 @@
 Obsidian SERP（Search Engine Results Page）は、ノートの検索結果を表示するインターフェースを提供します。
 外部の検索 API と連携することで、より効率的・効果的な検索を実現します。
 
-```json
+```jsonc
 // ${API Base Url}/search?q=Obsidian
 {
   "results": [
@@ -80,7 +80,7 @@ Obsidian SERP は、次の形式に従う外部検索 API に接続できます�
 - **検索エンドポイント**: `GET /search?q={query}`
   - クエリに対する検索結果を取得
 
-```json
+```jsonc
 {
 	"results": [
 		{
@@ -88,7 +88,6 @@ Obsidian SERP は、次の形式に従う外部検索 API に接続できます�
 			"linkpath": "9-inbox/Obsidianの基本的な使い方.md",  // Vaultからの相対パス
 			"snippet": "Obsidianは、マークダウン形式でノートを作成し、リンクを使ってノート同士を繋げることができるツールです。このガイドでは、Obsidianのインストールから基本的な使い方まで説明します。 インスト..."
 		},
-        ...
 	]
 }
 ```
@@ -96,7 +95,7 @@ Obsidian SERP は、次の形式に従う外部検索 API に接続できます�
 - **インデックスの状態**（Optional）: `GET /index/status`
   - 利用するインデックスの状態を取得
 
-```json
+```jsonc
 {
   "last_indexed": "05/06 17:39", // 任意の形式の日付を表す文字列
   "note_count": 5587
