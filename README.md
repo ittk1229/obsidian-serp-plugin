@@ -1,7 +1,10 @@
 # Obsidian SERP - Obsidian Search Engine Result Page
 
 Obsidian SERP（Search Engine Results Page）は、ノートの検索結果を表示するインターフェースを提供します。
+
 外部の検索 API と連携することで、より効率的・効果的な検索を実現します。
+
+検索APIは[Obsidian Retriever](https://github.com/ittk1229/obsidian-retriever)にて公開しています。
 
 ```jsonc
 // ${API Base Url}/search?q=Obsidian
@@ -72,12 +75,13 @@ cp ./styles.css ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 プラグインの設定画面から以下の内容を設定できます。
 
 - `API Base URL`: 検索 API の URL を設定
+  - [Obsidian Retriever](https://github.com/ittk1229/obsidian-retriever)をデフォルトの設定で利用する場合，`http://localhost:8000`を指定。
 
 ## API 統合
 
 Obsidian SERP は、次の形式に従う外部検索 API に接続できます。
 
-この形式に対応した検索 API の実装を含むリポジトリを近日公開します。
+この形式に対応した検索 API の実装を[Obsidian Retriever](https://github.com/ittk1229/obsidian-retriever)で公開しています。
 
 - **検索エンドポイント**: `GET /search?q={query}`
   - クエリに対する検索結果を取得
