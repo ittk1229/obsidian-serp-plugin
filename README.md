@@ -44,7 +44,7 @@ cd obsidian-serp-plugin
 mkdir ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 cp ./manifest.json ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 cp ./main.js ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
-cp ./style.css ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
+cp ./styles.css ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 ```
 
 2. Obsidian を再起動
