@@ -1,6 +1,6 @@
 # Obsidian SERP - Obsidian Search Engine Result Page
 
-Obsidian SERP（Search Engine Results Page）は、ノートの検索結果を表示するインターフェースを提供します。
+Obsidian SERP（Search Engine Result Page）は、ノートの検索結果を表示するインターフェースを提供します。
 
 外部の検索 API と連携することで、より効率的・効果的な検索を実現します。
 
@@ -68,7 +68,7 @@ cp ./styles.css ${vault_dirpath}/.obsidian/plugins/obsidian-serp-plugin
 | -------------------- | -------------------------------------------------------------------------------------------- | ------------------------ |
 | Open SERP View       | 検索ビューを開く                                                                             | -                        |
 | Focus Query Box      | クエリ入力欄にフォーカス&クエリを選択状態に                                                  | `Ctrl/Cmd+K`             |
-| Search Selected Text | アクティブなエディタの選択されているテキストで検索（選択範囲がない場合はノートの全文で検索） | `Ctrl/Cmd+Shift+S`       |
+| Search Selected Text | アクティブなエディタの選択されているテキストで検索（選択範囲がない場合はノートの全文で検索） | `Ctrl/Cmd+Shift+K`       |
 
 ## 設定
 
